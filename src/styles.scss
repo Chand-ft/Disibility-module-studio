@@ -2,3 +2,147 @@
 
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import "nDefaults.scss";
+*{
+    font-family: 'Halis R';
+    font-style: normal;
+}
+.background{
+    // background-color: orange;
+    // height: 100vh;
+    background-image: url("Assets/Web/Icons/Desktop - 1background.png");
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0%;
+}
+.routerOutlet{
+    height: calc(100% - 100px);
+    overflow: scroll;
+}
+.navBar{
+    height: 73px; 
+    border-bottom: 1px solid #EFEFEF;
+    
+}
+.navBarItems{
+    // background-color: rebeccapurple;
+    width: 280px;
+    height: 50px;
+}
+.navBarItems-xs{
+    // background-color: rebeccapurple;
+    height: 50px;
+}
+.navBarButton{
+    border: 1px solid #E9651F; 
+    color: #DD601E; 
+    border-radius: 24px;
+    background: rgba(221, 96, 30, 0.12);
+    padding: 2px 10px;
+}
+.footerNextButton{
+    background: rgba(233, 101, 31, 0.65);
+    color: white;
+    border-radius: 24px;
+    padding: 2px 10px;
+}
+.fullWidth{
+    width: 100%;
+}
+.marginTop100{
+    margin-top: 100px;
+}
+.marginBottom50{
+    margin-bottom:50px ;
+    }
+.marginTop50{
+    margin-top: 50px;
+}
+.marginBottom100{
+    margin-bottom:100px ;
+}
+.marginRight35{
+    margin-right: 35px;
+}
+.whiteBackground{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+.marginTop20{
+    margin-top: 20px;
+}
+.scroll{
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width:100%;
+}
+.disclaimerHeight{
+    height: 175px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.iNeedAdviceIcon{
+    color: #1273A2;
+    font-size: 15px;
+    margin-bottom: -11px;
+    margin-left: 5px;
+}
+.footer{
+    border-top: 1px solid #EFEFEF;
+}
+.footerHeight{
+    height: 65px;
+}
+.disclaimerheading{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #5E5873;
+}
+.disclaimerText{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #B9B9C3;
+}
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, .mat-step-header .mat-step-icon-state-edit {
+    background-color: #DD601E;
+    color: #fff;
+}
+.bodyIcons {
+    height: fit-content !important;
+    width: fit-content !important;
+    font-size: 80px;
+    color: #BABFC7;
+}
+.bodyText{
+    font-family: 'Halis R';
+    font-size: 14px;
+    line-height: 23px;
+    text-align: center;
+    color: #4B4B4B;
+}
+.datePickerText{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+}
+.mat-form-field-flex {
+    display: inline-flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 320px !important;
+    height: 50px;
+}
+.routerOutletsDiv{
+    // background-color: purple; 
+    height: fit-content;
+}
+// .mat-form-field-appearance-outline .mat-form-field-flex {
+//     width: 379px;
+//     height: 46px;
+// }

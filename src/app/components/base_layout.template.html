@@ -1,11 +1,51 @@
-<div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-    <bh-navBar></bh-navBar>
-  </div>
-  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-    <router-outlet></router-outlet>
-  </div>
-  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-    <bh-footer></bh-footer>
+<div fxLayout="column wrap" class="background" fxFlex="100" fxLayoutAlign="start center" [fxShow]="true">
+  <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true">
+    <div fxLayout="column wrap" fxFlex="93" fxLayoutGap="15px" fxLayoutAlign="start stretch" [fxShow]="true">
+      <div fxLayout="row wrap" class="fullWidth" fxLayoutAlign="center stretch" [fxShow]="true">
+        <div fxLayout="column wrap" class="whiteBackground" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true">
+          <div fxLayout="row wrap" class="navBar fullWidth" fxLayoutAlign="center center" [fxShow]="true">
+            <div fxLayout="column wrap" fxFlex="90" fxLayoutAlign="center stretch" [fxShow]="true">
+              <bh-navBar></bh-navBar>
+            </div>
+          </div>
+          <div fxLayout="row wrap" class="marginTop100" fxLayoutAlign="start stretch" [fxShow]="true">
+            <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true">
+              <bh-stepper></bh-stepper>
+            </div>
+          </div>
+          <div fxLayout="row wrap" class="routerOutletsDiv fullWidth" fxLayoutAlign="center stretch" [fxShow]="true">
+            <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="center stretch" [fxShow]="true">
+              <bh-date_picker></bh-date_picker>
+            </div>
+          </div>
+          <div fxLayout="row wrap" class="marginBottom100 fullWidth" fxLayoutAlign="center stretch" [fxShow]="true">
+            <div fxLayout="column wrap" fxFlex="100" fxLayoutGap="5px" fxLayoutAlign="start center" [fxShow]="true">
+              <div>
+                <p style="font-weight: 500; font-size: 18px; line-height: 23.4px;">Not sure?</p>
+              </div>
+              <div fxLayout="row wrap" fxLayoutAlign="start center" [fxShow]="true">
+                <div>
+                  <p style="font-size: 16px; font-weight: 500; color: #1273A2; line-height: 20.8px;">I need advice</p>
+                </div>
+                <mat-icon class="iNeedAdviceIcon" color="#1273A2">help_outline</mat-icon>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="row wrap" class="footer fullWidth" fxLayoutAlign="end center" [fxShow]="true">
+            <bh-footer></bh-footer>
+          </div>
+        </div>
+      </div>
+      <div fxLayout="row wrap" class="disclaimerHeight fullWidth" fxLayoutAlign="center start" [fxShow]="true">
+        <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true">
+          <div>
+            <p class="disclaimerheading">Disclaimer</p><br>
+            <p class="disclaimerText">Woligo is the marketing name of CamSolutions, LLC, an Oklahoma corporation. CamSolutions, LLC is a licensed independent insurance broker. CamSolutions, LLC operates in California as Woligo Insurance Solutions with the California license number (6002977) and is also licensed in Oklahoma (30009078&#x200A;1), Arizona (3000982823), and Texas (2572693). Other state insurance license numbers available on request.</p>
+            <!-- <a href="_blank">Read more</a> -->
+            <p>Read more</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

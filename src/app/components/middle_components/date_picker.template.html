@@ -1,0 +1,13 @@
+<div fxLayout="row wrap" class="marginBottom50 fullWidth" fxLayoutAlign="center center" [fxShow]="true">
+  <div fxLayout="column wrap" fxLayoutAlign="start center" [fxShow]="true">
+    <div>
+      <p class="datePickerText">What is your date of birth?</p>
+    </div>
+    <mat-form-field class="marginTop20" [appearance]="&apos;outline&apos;">
+      <input matInput placeholder="mm/dd/yyyy" [matDatepicker]="picker" [required]="false" [disabled]="false">
+      <mat-datepicker-toggle matSuffix [for]="picker" disabled="false"></mat-datepicker-toggle>
+      <mat-datepicker #picker [disabled]="false"></mat-datepicker>
+
+    </mat-form-field>
+  </div>
+</div>
