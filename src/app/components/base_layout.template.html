@@ -13,9 +13,19 @@
               <bh-stepper></bh-stepper>
             </div>
           </div>
+          <div fxLayout="row wrap" class="marginBottom50 fullWidth" fxLayoutAlign="center stretch" [fxShow]="true">
+            <div fxLayout="column wrap" fxFlex="100" fxLayoutGap="5px" fxLayoutAlign="start center" [fxShow]="true">
+              <div>
+                <p style="font-weight: 500; font-size: 24px; line-height: 31.2px;">How can we help you?</p>
+              </div>
+              <div>
+                <p style="font-size: 16px; font-weight: 400; color: #BABFC7; line-height: 20.8px;">Select all that apply</p>
+              </div>
+            </div>
+          </div>
           <div fxLayout="row wrap" class="routerOutletsDiv fullWidth" fxLayoutAlign="center stretch" [fxShow]="true">
             <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="center stretch" [fxShow]="true">
-              <bh-date_picker></bh-date_picker>
+              <bh-eligibility></bh-eligibility>
             </div>
           </div>
           <div fxLayout="row wrap" class="marginBottom100 fullWidth" fxLayoutAlign="center stretch" [fxShow]="true">
