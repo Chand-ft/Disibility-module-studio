@@ -139,7 +139,21 @@ p, h1, h2, h3, h4, h5, h6 {
     width: 320px !important;
     height: 50px;
 }
-
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: #DD601E;
+}
+.mat-calendar-body-selected{
+    background-color: #DD601E !important;
+    color: white;
+}
+.cantFindOccupationIcon{
+    color: #DD601E;
+    font-size: 22px;
+ 
+}
+.cantFindOccupationBoxMarginTop{
+    margin-top: -22px ;
+}
 .routerOutletsDiv{
     // background-color: purple; 
     height: fit-content;

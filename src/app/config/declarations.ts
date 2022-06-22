@@ -15,6 +15,22 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-summaryComponent
+import { summaryComponent } from '../components/middle_components/summary.component';
+//CORE_REFERENCE_IMPORT-nicotineComponent
+import { nicotineComponent } from '../components/middle_components/nicotine.component';
+//CORE_REFERENCE_IMPORT-gov_employeeComponent
+import { gov_employeeComponent } from '../components/middle_components/gov_employee.component';
+//CORE_REFERENCE_IMPORT-gross_incomeComponent
+import { gross_incomeComponent } from '../components/middle_components/gross_income.component';
+//CORE_REFERENCE_IMPORT-full_timeComponent
+import { full_timeComponent } from '../components/middle_components/full_time.component';
+//CORE_REFERENCE_IMPORT-occupationComponent
+import { occupationComponent } from '../components/middle_components/occupation.component';
+//CORE_REFERENCE_IMPORT-provinceComponent
+import { provinceComponent } from '../components/middle_components/province.component';
+//CORE_REFERENCE_IMPORT-genderComponent
+import { genderComponent } from '../components/middle_components/gender.component';
 //CORE_REFERENCE_IMPORT-eligibilityComponent
 import { eligibilityComponent } from '../components/middle_components/eligibility.component';
 //CORE_REFERENCE_IMPORT-date_pickerComponent
@@ -63,6 +79,22 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-summaryComponent
+  summaryComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-nicotineComponent
+  nicotineComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-gov_employeeComponent
+  gov_employeeComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-gross_incomeComponent
+  gross_incomeComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-full_timeComponent
+  full_timeComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-occupationComponent
+  occupationComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-provinceComponent
+  provinceComponent,
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-genderComponent
+  genderComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-eligibilityComponent
   eligibilityComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-date_pickerComponent
