@@ -64,10 +64,30 @@ export class three_iconsComponent {
 
   sd_kCl4j3VAFVjnalHa(bh) {
     try {
+      this.page.items = [];
+      bh = this.sd_YSH5ZXtdOs8bUJcB(bh);
       //appendnew_next_sd_kCl4j3VAFVjnalHa
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_kCl4j3VAFVjnalHa');
+    }
+  }
+
+  sd_YSH5ZXtdOs8bUJcB(bh) {
+    try {
+      const page = this.page;
+      page.items = [
+        {
+          icon: 'family_restroom',
+          text: 'I need to protect my income or family',
+        },
+        { icon: 'volunteer_activism', text: 'I need health insurance' },
+        { icon: 'business_center', text: 'I need to protect my business' },
+      ];
+      //appendnew_next_sd_YSH5ZXtdOs8bUJcB
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_YSH5ZXtdOs8bUJcB');
     }
   }
 

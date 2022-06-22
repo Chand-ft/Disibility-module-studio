@@ -64,10 +64,38 @@ export class summaryComponent {
 
   sd_fxgNZeeiEz2riAIY(bh) {
     try {
+      this.page.items = [];
+      bh = this.sd_c1yUlom12U6bZRi8(bh);
       //appendnew_next_sd_fxgNZeeiEz2riAIY
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_fxgNZeeiEz2riAIY');
+    }
+  }
+
+  sd_c1yUlom12U6bZRi8(bh) {
+    try {
+      const page = this.page;
+      page.items = [
+        { category: 'Protection type', selected: 'empty-for-now' },
+        { category: 'Insurance type', selected: 'empty-for-now' },
+        { category: 'Date of birth', selected: 'empty-for-now' },
+        { category: 'Gender at birth', selected: 'empty-for-now' },
+        { category: 'Maternity leave coverage?', selected: 'empty-for-now' },
+        { category: 'Occupation category', selected: 'empty-for-now' },
+        {
+          category:
+            'Are you employed full time and work at least 30 hours per week?',
+          selected: 'empty-for-now',
+        },
+        { category: 'Monthly gross income', selected: 'empty-for-now' },
+        { category: 'Government employee', selected: 'empty-for-now' },
+        { category: 'Do you use nicotine', selected: 'empty-for-now' },
+      ];
+      //appendnew_next_sd_c1yUlom12U6bZRi8
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_c1yUlom12U6bZRi8');
     }
   }
 

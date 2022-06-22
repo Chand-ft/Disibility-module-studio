@@ -9,48 +9,18 @@
     </div>
     <div fxLayout="row wrap" class="fullWidth" fxLayoutAlign="center stretch" [fxShow]="true">
       <div fxLayout="column wrap" fxFlex="80" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true">
-        <div fxLayout="row wrap" class="whiteBoxForSummary fullWidth" fxLayoutAlign="space-between stretch" [fxShow]="true">
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div fxLayout="row wrap" class="whiteBoxForSummary fullWidth" fxLayoutAlign="space-between stretch" [fxShow]="true" *ngFor="let item of page.items">
+          <div fxLayout="column wrap" fxFlex="50" fxLayoutAlign="start stretch" [fxShow]="true">
             <div>
-              <p style="font-weight: 500; font-size: 18px; line-height: 23px; color: #5E5873;">Category</p>
+              <p style="font-weight: 500; font-size: 18px; line-height: 23px; color: #5E5873;">{{item.category}}</p>
             </div>
           </div>
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-            <div fxLayout="row wrap" fxLayoutGap="40px" fxLayoutAlign="start stretch" [fxShow]="true">
+          <div fxLayout="column wrap" fxFlex="50" fxLayoutAlign="start stretch" [fxShow]="true">
+            <div fxLayout="row wrap" fxLayoutGap="40px" fxLayoutAlign="end stretch" [fxShow]="true">
               <div>
-                <p style="font-weight: 500; font-size: 18px; line-height: 23px; color: #1273A2;">Selected</p>
+                <p style="font-weight: 500; font-size: 18px; line-height: 23px; color: #1273A2;">{{item.selected}}</p>
               </div>
-              <mat-icon>home</mat-icon>
-            </div>
-          </div>
-        </div>
-        <div fxLayout="row wrap" class="whiteBoxForSummary fullWidth" fxLayoutAlign="space-between stretch" [fxShow]="true">
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-            <div>
-              <p style="font-weight: 500; font-size: 18px; line-height: 23px; color: #5E5873;">Category</p>
-            </div>
-          </div>
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-            <div fxLayout="row wrap" fxLayoutGap="40px" fxLayoutAlign="start stretch" [fxShow]="true">
-              <div>
-                <p style="font-weight: 500; font-size: 18px; line-height: 23px; color: #1273A2;">Selected</p>
-              </div>
-              <mat-icon>home</mat-icon>
-            </div>
-          </div>
-        </div>
-        <div fxLayout="row wrap" class="whiteBoxForSummary fullWidth" fxLayoutAlign="space-between stretch" [fxShow]="true">
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-            <div>
-              <p style="font-weight: 500; font-size: 18px; line-height: 23px; color: #5E5873;">Category</p>
-            </div>
-          </div>
-          <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-            <div fxLayout="row wrap" fxLayoutGap="40px" fxLayoutAlign="start stretch" [fxShow]="true">
-              <div>
-                <p style="font-weight: 500; font-size: 18px; line-height: 23px; color: #1273A2;">Selected</p>
-              </div>
-              <mat-icon>home</mat-icon>
+              <mat-icon>edit</mat-icon>
             </div>
           </div>
         </div>

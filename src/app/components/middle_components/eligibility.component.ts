@@ -64,10 +64,38 @@ export class eligibilityComponent {
 
   sd_r8lmReCUBKlsMbhu(bh) {
     try {
+      this.page.items = [];
+      bh = this.sd_PSPP7jGr9UPk5NI0(bh);
       //appendnew_next_sd_r8lmReCUBKlsMbhu
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_r8lmReCUBKlsMbhu');
+    }
+  }
+
+  sd_PSPP7jGr9UPk5NI0(bh) {
+    try {
+      const page = this.page;
+      page.items = [
+        {
+          row1: [
+            { icon: 'accessible', text: 'Disability Insurance' },
+            { icon: 'personal_injury', text: 'Accidental Insurance' },
+            { icon: 'monitor_heart', text: 'Life Insurance' },
+          ],
+        },
+        {
+          row2: [
+            { icon: 'discount', text: 'Discount Plans' },
+            { icon: 'volunteer_activism', text: 'Health Insurance' },
+            { icon: 'business_center', text: 'Business Insurance' },
+          ],
+        },
+      ];
+      //appendnew_next_sd_PSPP7jGr9UPk5NI0
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_PSPP7jGr9UPk5NI0');
     }
   }
 

@@ -64,10 +64,28 @@ export class four_iconsComponent {
 
   sd_CyLyTFgB5NLqWyEP(bh) {
     try {
+      this.page.items = [];
+      bh = this.sd_DiYhXXTZydTRg0Pu(bh);
       //appendnew_next_sd_CyLyTFgB5NLqWyEP
       return bh;
     } catch (e) {
       return this.errorHandler(bh, e, 'sd_CyLyTFgB5NLqWyEP');
+    }
+  }
+
+  sd_DiYhXXTZydTRg0Pu(bh) {
+    try {
+      const page = this.page;
+      page.items = [
+        { icon: 'accessible', text: 'Disability Insurance' },
+        { icon: 'personal_injury', text: 'Accidental Insurance' },
+        { icon: 'monitor_heart', text: 'Life Insurance' },
+        { icon: 'discount', text: 'Discount Plans' },
+      ];
+      //appendnew_next_sd_DiYhXXTZydTRg0Pu
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_DiYhXXTZydTRg0Pu');
     }
   }
 
