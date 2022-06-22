@@ -1,8 +1,10 @@
 <div fxLayout="row wrap" class="fullWidth" fxLayoutAlign="center stretch" [fxShow]="true">
-  <div fxLayout="column wrap" fxFlex="60" fxLayoutAlign="start center" [fxShow]="true">
-    <div fxLayout="row wrap" fxLayoutAlign="center start" [fxShow]="true">
-      <div>
-        <p class="datePickerText">Unfortunately, you are not eligible for the selected plan coverage. Not to worry, we have other solutions that may work for you!</p>
+  <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start center" [fxShow]="true">
+    <div fxLayout="row wrap" class="fullWidth" fxLayoutAlign="center start" [fxShow]="true">
+      <div fxLayout="column wrap" fxFlex="60" fxLayoutAlign="start stretch" [fxShow]="true">
+        <div>
+          <p class="datePickerText">Unfortunately, you are not eligible for the selected plan coverage. Not to worry, we have other solutions that may work for you!</p>
+        </div>
       </div>
     </div>
     <div fxLayout="row wrap" class="marginBottom50 fullWidth" fxLayoutAlign="center center" [fxShow]="true">
@@ -27,6 +29,8 @@
         </div>
         <mat-checkbox [required]="false"></mat-checkbox>
       </div>
+    </div>
+    <div fxLayout="row wrap" class="marginBottom50 fullWidth" fxLayoutAlign="center center" [fxShow]="true">
       <div fxLayout="column wrap" fxFlex="181px" fxLayoutAlign="start center" [fxShow]="true">
         <mat-icon class="bodyIcons">home</mat-icon>
         <div>
