@@ -15,6 +15,8 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-price_checkComponent
+import { price_checkComponent } from '../components/middle_components/price_check.component';
 //CORE_REFERENCE_IMPORT-summaryComponent
 import { summaryComponent } from '../components/middle_components/summary.component';
 //CORE_REFERENCE_IMPORT-nicotineComponent
@@ -79,6 +81,8 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-price_checkComponent
+  price_checkComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-summaryComponent
   summaryComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-nicotineComponent
