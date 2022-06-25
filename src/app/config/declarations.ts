@@ -140,7 +140,15 @@ export const appProviders = [
 
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [
-  { path: 'home', component: base_layoutComponent },
+  {
+    path: 'home',
+    component: base_layoutComponent,
+    children: [
+      { path: 'four', component: four_iconsComponent },
+      { path: 'date', component: date_pickerComponent },
+    ],
+  },
+  { path: 'employee', component: gov_employeeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];

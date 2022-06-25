@@ -1,8 +1,8 @@
 <div fxLayout="row wrap" class="marginBottom50 fullWidth" fxLayoutAlign="center center" [fxShow]="true">
-  <div fxLayout="column wrap" fxFlex="181px" fxLayoutAlign="start center" [fxShow]="true">
-    <mat-icon class="bodyIcons">home</mat-icon>
+  <div fxLayout="column wrap" fxFlex="181px" fxLayoutAlign="start center" [fxShow]="true" *ngFor="let item of page.items">
+    <mat-icon class="bodyIcons">{{item.icon}}</mat-icon>
     <div>
-      <p class="bodyText">How can we help you?</p>
+      <p class="bodyText">{{item.text}}</p>
     </div>
     <mat-checkbox [required]="false"></mat-checkbox>
   </div>
