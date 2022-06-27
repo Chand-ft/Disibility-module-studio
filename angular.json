@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "disability-module-studio": {
+        "woligo-app": {
             "root": "",
             "sourceRoot": "src",
             "projectType": "application",
@@ -70,18 +70,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "disability-module-studio:build"
+                        "browserTarget": "woligo-app:build"
                     },
                     "configurations": {
                         "prod": {
-                            "browserTarget": "disability-module-studio:build:prod"
+                            "browserTarget": "woligo-app:build:prod"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "disability-module-studio:build"
+                        "browserTarget": "woligo-app:build"
                     }
                 },
                 "test": {
@@ -122,7 +122,7 @@
                 }
             }
         },
-        "disability-module-studio-e2e": {
+        "woligo-app-e2e": {
             "root": "e2e/",
             "projectType": "application",
             "architect": {
@@ -130,7 +130,7 @@
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
                         "protractorConfig": "e2e/protractor.conf.js",
-                        "devServerTarget": "disability-module-studio:serve"
+                        "devServerTarget": "woligo-app:serve"
                     },
                     "configurations": {
                         "prod": {
@@ -150,7 +150,7 @@
             }
         }
     },
-    "defaultProject": "disability-module-studio",
+    "defaultProject": "woligo-app",
     "schematics": {
         "@schematics/angular:component": {
             "prefix": "app",
