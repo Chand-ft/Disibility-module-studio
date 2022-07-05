@@ -1,6 +1,6 @@
 <div fxLayout="column wrap" class="background" fxFlex="100" fxLayoutAlign="start center" [fxShow]="true">
-  <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true">
-    <div fxLayout="column wrap" fxFlex="93" fxLayoutGap="15px" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div fxLayout="row wrap" class="marginBottom50 fullWidth" fxLayoutAlign="center stretch" [fxShow]="true">
+    <div fxLayout="column wrap" fxFlex="83" fxLayoutGap="15px" fxLayoutAlign="start stretch" [fxShow]="true">
       <div fxLayout="row wrap" class="fullWidth" fxLayoutAlign="center stretch" [fxShow]="true">
         <div fxLayout="column wrap" class="whiteBackground" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true">
           <div fxLayout="row wrap" class="navBar fullWidth" fxLayoutAlign="center center" [fxShow]="true">
@@ -8,52 +8,136 @@
               <bh-navBar></bh-navBar>
             </div>
           </div>
-          <div fxLayout="row wrap" class="marginTop100" fxLayoutAlign="start stretch" [fxShow]="true">
-            <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true">
-              <bh-stepper></bh-stepper>
-            </div>
-          </div>
-          <div fxLayout="row wrap" class="marginBottom50 fullWidth" fxLayoutAlign="center stretch" [fxShow]="true">
-            <div fxLayout="column wrap" fxFlex="100" fxLayoutGap="5px" fxLayoutAlign="start center" [fxShow]="true">
-              <div>
-                <p style="font-weight: 500; font-size: 24px; line-height: 31.2px;">How can we help you?</p>
-              </div>
-              <div>
-                <p style="font-size: 16px; font-weight: 400; color: #BABFC7; line-height: 20.8px;">Select all that apply</p>
-              </div>
-            </div>
-          </div>
-          <div fxLayout="row wrap" class="routerOutletsDiv fullWidth" fxLayoutAlign="center stretch" [fxShow]="true">
-            <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="center stretch" [fxShow]="true">
-              <router-outlet></router-outlet>
-              <bh-gov_employee></bh-gov_employee>
-            </div>
-          </div>
-          <div fxLayout="row wrap" class="marginBottom100 fullWidth" fxLayoutAlign="center stretch" [fxShow]="true">
-            <div fxLayout="column wrap" fxFlex="100" fxLayoutGap="5px" fxLayoutAlign="start center" [fxShow]="true">
-              <div>
-                <p style="font-weight: 500; font-size: 18px; line-height: 23.4px;">Not sure?</p>
-              </div>
-              <div fxLayout="row wrap" fxLayoutAlign="start center" [fxShow]="true">
-                <div>
-                  <p style="font-size: 16px; font-weight: 500; color: #1273A2; line-height: 20.8px;">I need advice</p>
+          <div fxLayout="row wrap" class="mainBox marginBottom50 fullWidth" fxLayoutAlign="center stretch" [fxShow]="true"><img imgSrc="/Web/Downloaded images/topLeftVector.png" class="topLeftBGImage"><img imgSrc="/Web/Downloaded images/bottomLeftVector.png" class="bottomLeftBGImage"><img imgSrc="/Web/Downloaded images/bottomRightVector.png" class="bottomRightBGImage"><img imgSrc="/Web/Downloaded images/topRightVector.png" class="topRightBGImage">
+            <div fxLayout="column wrap" fxFlex="40" fxLayoutAlign="start center" [fxShow]="true">
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+                <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true">
+                  <bh-stepper></bh-stepper>
                 </div>
-                <mat-icon class="iNeedAdviceIcon" color="#1273A2">help_outline</mat-icon>
+              </div>
+              <div fxLayout="row wrap" class="marginBottom20 fullWidth" fxLayoutAlign="start stretch" [fxShow]="true">
+                <div fxLayout="column wrap" fxFlex="100" fxLayoutGap="5px" fxLayoutAlign="start start" [fxShow]="true">
+                  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+                    <div>
+                      <p class="welcomeToWoligoText">Welcome to Woligo!</p>
+                    </div><img imgSrc="/Web/Downloaded images/wave.png" width="20px">
+                  </div>
+                  <div>
+                    <p class="provideYourInformationToRegisterText">Please provide your information to register your account</p>
+                  </div>
+                </div>
+              </div>
+              <div fxLayout="row wrap" class="fullWidth" fxLayoutAlign="center stretch" [fxShow]="true">
+                <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true">
+                  <form>
+                    <div fxLayout="column wrap" class="marginBottom20" fxLayoutAlign="start stretch" [fxShow]="true">
+                      <div>
+                        <p class="inputMessageText">Email ( Recovery email address ) <span style="color: red">*</span></p>
+                      </div>
+                      <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                        <input matInput placeholder="e.g johnsmith@gmail.com" [required]="false">
+
+                      </mat-form-field>
+                      <div>
+                        <p class="inputMessageText">This will be used to reset password</p>
+                      </div>
+                    </div>
+                    <div fxLayout="column wrap" class="marginBottom20" fxLayoutAlign="start stretch" [fxShow]="true">
+                      <div fxLayout="row wrap" fxLayoutAlign="space-between stretch" [fxShow]="true">
+                        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+                          <div>
+                            <p class="inputMessageText">First Name <span style="color: red">*</span></p>
+                          </div>
+                          <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                            <input matInput placeholder="Enter Name" [required]="false">
+
+                          </mat-form-field>
+                        </div>
+                        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+                          <div>
+                            <p class="inputMessageText">Last Name <span style="color: red">*</span></p>
+                          </div>
+                          <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+                            <input matInput placeholder="Enter Name" [required]="false">
+
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    </div>
+                    <div fxLayout="column wrap" class="marginBottom20" fxLayoutAlign="start stretch" [fxShow]="true">
+                      <div fxLayout="row wrap" fxLayoutAlign="space-between stretch" [fxShow]="true">
+                        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+                          <div>
+                            <p class="inputMessageText">Gender at birth *</p>
+                          </div>
+                          <div fxLayout="row wrap" class="genderBoarder" fxLayoutGap="5px" fxLayoutAlign="start center" [fxShow]="true">
+                            <mat-radio-button [required]="false"></mat-radio-button><img imgSrc="/Web/Downloaded images/Male.png">
+                            <div>
+                              <p class="genderText">Male</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div fxLayout="column wrap" fxLayoutAlign="end stretch" [fxShow]="true">
+                          <div fxLayout="row wrap" class="genderBoarder" fxLayoutGap="5px" fxLayoutAlign="start center" [fxShow]="true">
+                            <mat-radio-button [required]="false"></mat-radio-button><img imgSrc="/Web/Downloaded images/Female.png">
+                            <div>
+                              <p class="genderText">Female</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div fxLayout="column wrap" class="marginBottom20" fxLayoutAlign="start stretch" [fxShow]="true">
+                      <div fxLayout="row wrap" fxLayoutAlign="space-between stretch" [fxShow]="true">
+                        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+                          <div>
+                            <p class="inputMessageText">Date of Birth <span style="color: red">*</span></p>
+                          </div>
+                          <mat-form-field class="width204px" [appearance]="&apos;outline&apos;">
+                            <input matInput placeholder="mm/dd/yyyy" [matDatepicker]="picker" [required]="false" [disabled]="true">
+                            <mat-datepicker-toggle matSuffix [for]="picker" disabled="false"></mat-datepicker-toggle>
+                            <mat-datepicker #picker [disabled]="false"></mat-datepicker>
+
+                          </mat-form-field>
+                        </div>
+                        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+                          <div>
+                            <p class="inputMessageText">State <span style="color: red">*</span></p>
+                          </div>
+                          <mat-form-field [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;">
+                            <mat-select placeholder="Select" [required]="false">
+                              <mat-option [value]="&apos;westernCape&apos;" disabled="false">Western Cape</mat-option>
+                              <mat-option [value]="&apos;mpumalanga&apos;" disabled="false">Mpumalanga</mat-option>
+                              <mat-option [value]="&apos;northWest&apos;" disabled="false">North West</mat-option>
+                              <mat-option [value]="&apos;freeState&apos;" disabled="false">Free State</mat-option>
+                              <mat-option [value]="&apos;northernCape&apos;" disabled="false">Northern Cape</mat-option>
+                              <mat-option [value]="&apos;limpopo&apos;" disabled="false">Limpopo</mat-option>
+                              <mat-option [value]="&apos;easternCape&apos;" disabled="false">Eastern Cape</mat-option>
+                              <mat-option [value]="&apos;gauteng&apos;" disabled="false">Gauteng</mat-option>
+                              <mat-option [value]="&apos;kzn&apos;" disabled="false">Kwazulu-Natal</mat-option>
+                            </mat-select>
+
+                          </mat-form-field>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+                <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true">
+                  <div fxLayout="row wrap" fxLayoutGap="5px" fxLayoutAlign="center stretch" [fxShow]="true">
+                    <div>
+                      <p class="alreadyHaveAnAccountText">Already have an account?</p>
+                    </div>
+                    <div>
+                      <p class="loginText">Login</p>
+                    </div>
+                  </div>
+                  <div fxLayout="row wrap" class="marginTop20" fxLayoutAlign="center center" [fxShow]="true"><button mat-button class="nextButton">Next &#x2192;</button></div>
+                </div>
               </div>
             </div>
-          </div>
-          <div fxLayout="row wrap" class="footer fullWidth" fxLayoutAlign="end center" [fxShow]="true">
-            <bh-footer></bh-footer>
-          </div>
-        </div>
-      </div>
-      <div fxLayout="row wrap" class="disclaimerHeight fullWidth" fxLayoutAlign="center start" [fxShow]="true">
-        <div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true">
-          <div>
-            <p class="disclaimerheading">Disclaimer</p><br>
-            <p class="disclaimerText">Woligo is the marketing name of CamSolutions, LLC, an Oklahoma corporation. CamSolutions, LLC is a licensed independent insurance broker. CamSolutions, LLC operates in California as Woligo Insurance Solutions with the California license number (6002977) and is also licensed in Oklahoma (30009078&#x200A;1), Arizona (3000982823), and Texas (2572693). Other state insurance license numbers available on request.</p>
-            <!-- <a href="_blank">Read more</a> -->
-            <p>Read more</p>
           </div>
         </div>
       </div>

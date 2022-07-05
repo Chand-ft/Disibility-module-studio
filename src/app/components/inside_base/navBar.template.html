@@ -1,21 +1,9 @@
 <div fxLayout="row wrap" fxLayoutAlign="space-between center" [fxShow]="true">
-  <div fxLayout="column wrap" class="navBarItems-xs" fxLayoutAlign="center start" [fxShow]="false" fxShow.xs="true">
-    <mat-icon>menu</mat-icon>
+  <div fxLayout="column wrap" class="navBarItems-xs" fxFlex="10" fxLayoutAlign="center start" [fxShow]="true">
+    <mat-icon fxShow.xs="true" fxHide="true">menu</mat-icon>
   </div>
-  <div fxLayout="column wrap" class="navBarItems" fxLayoutAlign="center start" [fxShow]="true" fxHide.xs="true">
-    <mat-icon>home</mat-icon>
-  </div>
-  <div fxLayout="column wrap" class="navBarItems" fxLayoutAlign="center center" [fxShow]="true"><img imgSrc="/Web/Icons/Picture 1.png" width="250px"></div>
-  <div fxLayout="column wrap" class="navBarItems" fxLayoutAlign="center end" [fxShow]="true" fxHide.xs="true">
-    <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start center" [fxShow]="true">
-      <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
-        <mat-icon>refresh</mat-icon>
-      </div>
-      <div fxLayout="column wrap" class="navBarButton" fxLayoutAlign="center center" [fxShow]="true">
-        <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true">
-          <mat-icon>input</mat-icon><button mat-button>Login or Register</button>
-        </div>
-      </div>
-    </div>
+  <div fxLayout="column wrap" class="navBarItems" fxFlex="80" fxLayoutAlign="center center" [fxShow]="true"><img imgSrc="/Web/Icons/Picture 1.png" width="250px"></div>
+  <div fxLayout="column wrap" fxFlex="10" fxLayoutAlign="start end" [fxShow]="true" fxHide.xs="true">
+    <mat-icon fxHide.xs="true">refresh</mat-icon>
   </div>
 </div>

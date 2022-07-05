@@ -12,7 +12,6 @@
     font-style: normal;
 }
 .background{
-    // background-color: orange;
     // height: 100vh;
     background-image: url("Assets/Web/Icons/Desktop - 1background.png");
 }
@@ -20,10 +19,7 @@
 p, h1, h2, h3, h4, h5, h6 {
     margin: 0%;
 }
-.routerOutlet{
-    height: calc(100% - 100px);
-    overflow: scroll;
-}
+
 .navBar{
     height: 73px; 
     border-bottom: 1px solid #EFEFEF;
@@ -78,22 +74,13 @@ p, h1, h2, h3, h4, h5, h6 {
 .marginTop20{
     margin-top: 20px;
 }
+.marginBottom20{
+    margin-bottom: 20px;
+}
 .scroll{
     overflow-y: hidden;
     overflow-x: scroll;
     width:100%;
-}
-.disclaimerHeight{
-    height: 175px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    
-}
-.iNeedAdviceIcon{
-    color: #1273A2;
-    font-size: 15px;
-    margin-bottom: -11px;
-    margin-left: 5px;
 }
 .footer{
     border-top: 1px solid #EFEFEF;
@@ -117,63 +104,123 @@ p, h1, h2, h3, h4, h5, h6 {
     background-color: #DD601E;
     color: #fff;
 }
-.bodyIcons {
-    height: fit-content !important;
-    width: fit-content !important;
-    font-size: 80px;
-    color: #BABFC7;
-}
-.bodyText{
-    font-family: 'Halis R';
-    font-size: 14px;
-    line-height: 23px;
-    text-align: center;
-    color: #4B4B4B;
-}
-.datePickerText{
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 31px;
-    color: #000000;
-    text-align: center;
-}
+
 .mat-form-field-flex {
     display: inline-flex;
     align-items: center;
     box-sizing: border-box;
-    width: 320px !important;
+    // width: 320px !important;
     height: 50px;
 }
 .mat-form-field-appearance-outline .mat-form-field-outline {
-    color: #DD601E;
+    color: rgba(216, 214, 222, 1);
 }
 .mat-calendar-body-selected{
     background-color: #DD601E !important;
     color: white;
 }
-.cantFindOccupationIcon{
-    color: #DD601E;
-    font-size: 22px;
- 
+
+// .routerOutletsDiv{
+//     // background-color: purple; 
+//     height: fit-content;
+// }
+
+
+
+
+
+.welcomeToWoligoText{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #5E5873;
 }
-.cantFindOccupationBoxMarginTop{
-    margin-top: -22px ;
-}
-.routerOutletsDiv{
-    // background-color: purple; 
-    height: fit-content;
-}
-.whiteBoxForSummary{
-    height: fit-content;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
-    border-radius: 4px;
-    padding: 15px 16px;
+.provideYourInformationToRegisterText{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
     color: #6E6B7B;
 }
-.mat-progress-bar{
-    height: 12px !important;
+.inputMessageText{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #5E5873;
+    .asterix{
+        color: rgba(234, 84, 85, 1);
+    }
 }
-// .mat-form-field-appearance-outline .mat-form-field-flex {
-//     width: 379px;
-//     height: 46px;
-// }
+.mat-form-field-wrapper {
+    padding-bottom: 0em;
+}
+.genderBoarder{
+    border: 1px solid #D8D6DE;
+    border-radius: 5px;
+    width: 204px;
+    padding: 8px 16px;
+    .genderText{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #4B4B4B;
+}
+}
+.width204px{
+    width: 204px;
+}
+.alreadyHaveAnAccountText{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6E6B7B;
+}
+.loginText{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #0D6EFD;
+}
+.nextButton{
+    align-items: center;
+    padding: 13px 28px;
+    gap: 8px;
+    color: white;
+    background: rgba(233, 101, 31, 0.65);
+    border-radius: 24px !important;
+}
+
+
+.mat-form-field-appearance-outline .mat-form-field-infix {
+    // padding: 0em 0 -1em 0 !important;
+    padding: 7px 0px !important;
+    
+}
+
+
+
+.mat-input-element {
+    caret-color: #DD601E !important;
+}
+.mainBox{
+    position:relative;
+}
+.topLeftBGImage{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+.bottomLeftBGImage{
+    position: absolute;
+    bottom: -120px;
+    left: 0px;
+}
+.topRightBGImage{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+}
+.bottomRightBGImage{
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}

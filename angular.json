@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "woligo-app": {
+        "woligo-app-moon": {
             "root": "",
             "sourceRoot": "src",
             "projectType": "application",
@@ -70,18 +70,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "woligo-app:build"
+                        "browserTarget": "woligo-app-moon:build"
                     },
                     "configurations": {
                         "prod": {
-                            "browserTarget": "woligo-app:build:prod"
+                            "browserTarget": "woligo-app-moon:build:prod"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "woligo-app:build"
+                        "browserTarget": "woligo-app-moon:build"
                     }
                 },
                 "test": {
@@ -122,7 +122,7 @@
                 }
             }
         },
-        "woligo-app-e2e": {
+        "woligo-app-moon-e2e": {
             "root": "e2e/",
             "projectType": "application",
             "architect": {
@@ -130,7 +130,7 @@
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
                         "protractorConfig": "e2e/protractor.conf.js",
-                        "devServerTarget": "woligo-app:serve"
+                        "devServerTarget": "woligo-app-moon:serve"
                     },
                     "configurations": {
                         "prod": {
@@ -150,7 +150,7 @@
             }
         }
     },
-    "defaultProject": "woligo-app",
+    "defaultProject": "woligo-app-moon",
     "schematics": {
         "@schematics/angular:component": {
             "prefix": "app",
